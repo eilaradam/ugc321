@@ -17,6 +17,7 @@
   --mostarda-forte:#f0c53a;    /* mostarda fechada, usada no hover dos botoes */
   --mostarda-texto:#6f5200;    /* mostarda escura, para texto sobre fundo claro */
   --creme:#fff6dc;             /* fundo suave da familia da mostarda */
+  --vermelho:#c1121f;          /* vermelho da faixa de aviso do topo */
   --tinta:#1c1a12;             /* quase preto quente, texto e blocos escuros */
   --tinta-suave:#635f4f;
   --linha:#e8e5dc;
@@ -58,10 +59,10 @@ section[id]{scroll-margin-top:calc(var(--topo) + 20px)}
 /* ===== topo fixo ===== */
 .topo{position:fixed;inset:0 0 auto 0;z-index:90}
 .faixa-aviso{
-  background:var(--mostarda);color:var(--tinta);text-align:center;
+  background:var(--vermelho);color:#fff;text-align:center;
   font-size:.82rem;font-weight:600;letter-spacing:.04em;padding:9px 16px;
 }
-.faixa-aviso span{opacity:.7;font-weight:500}
+.faixa-aviso span{opacity:.85;font-weight:500}
 .barra{background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha)}
 .barra__int{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
 .marca{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.06rem;letter-spacing:-.02em}
